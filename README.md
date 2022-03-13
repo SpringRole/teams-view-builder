@@ -2,7 +2,7 @@
 
 ## Getting started
 
-This is a simple package that can be used to create the blocks and views required to interact with users on any Teams Application.
+This is a simple package that can be used to create the blocks and views required to interact with users on any Microsoft Teams Application.
 
 ### Installation
 
@@ -72,16 +72,16 @@ const TeamsViewBuilder = require("@springrole/teams-view-builder");
 
 renderColumnSet() {
     const body = [
-        TeamsViewBuilder.Container.columnSet({
+        TeamsViewBuilder.Containers.columnSet({
             columns: [
-                column({
+                TeamsViewBuilder.Containers.column({
                     items: [
                         TeamsViewBuilder.Elements.textBlock({
                             text: "Hello World!",
                         })
                     ]
                 }),
-                column({
+                TeamsViewBuilder.Containers.column({
                     items: [
                         TeamsViewBuilder.Elements.image({
                             url: "https://pbs.twimg.com/profile_images/3647943215/d7f12830b3c17a5a9e4afcc370e3a37e_400x400.jpeg",
@@ -131,6 +131,103 @@ tagUserInTextBlock(userName, userId) {
         entities: [
             TeamsViewBuilder.Entity.tag(userName, userId)
         ]
+    })
+}
+```
+
+#### Render a Text Block with Action Buttons in an adaptive card
+
+```javascript
+const TeamsViewBuilder = require("@springrole/teams-view-builder");
+
+renderTextBlockWithActions() {
+    const body = [
+        TeamsViewBuilder.Elements.textBlock({
+            text: "Hello World!",
+        })
+    ]
+
+    const actions = [
+        TeamsViewBuilder.Actions.submit({
+            title: "Cancel",
+            style: TeamsViewBuilder.Actions.ActionStyles.danger,
+            data: {
+                value: 'Cancel'
+            }
+        }),
+        TeamsViewBuilder.Actions.openUrl({
+            title: "Open Link",
+            style: TeamsViewBuilder.Actions.ActionStyles.primary,
+            url: "https://teams.microsoft.com/l/entity/ABCDE-12345-SAMPLE/tab"
+        })
+    ]
+
+    return TeamsViewBuilder.Cards.adaptiveCard({
+        body,
+        actions
+    })
+}
+
+// OR
+
+renderTextBlockWithActions() {
+    const body = [
+        TeamsViewBuilder.Elements.textBlock({
+            text: "Hello World!",
+        }),
+        TeamsViewBuilder.Containers.actionSet({
+            actions: [
+                TeamsViewBuilder.Actions.submit({
+                    title: "Cancel",
+                    style: TeamsViewBuilder.Actions.ActionStyles.danger,
+                    data: {
+                        value: 'Cancel'
+                    }
+                }),
+                TeamsViewBuilder.Actions.openUrl({
+                    title: "Open Link",
+                    style: TeamsViewBuilder.Actions.ActionStyles.primary,
+                    url: "https://teams.microsoft.com/l/entity/ABCDE-12345-SAMPLE/tab"
+                })
+            ]
+        })
+    ]
+    return TeamsViewBuilder.Cards.adaptiveCard({
+        body
+    })
+}
+```
+
+#### Render Select Dropdown in an adaptive card
+
+```javascript
+const TeamsViewBuilder = require("@springrole/teams-view-builder");
+
+renderSelectDropDown() {
+    const choices = [
+        TeamsViewBuilder.Input.choice({
+            title: "choice 1",
+            value: "1"
+        }),
+        TeamsViewBuilder.Input.choice({
+            title: "choice 2",
+            value: "2"
+        })
+    ]
+
+    const body = [
+        TeamsViewBuilder.Input.select({
+            choices,
+            placeholder: 'Select a value',
+            wrap: true,
+            spacing: TeamsViewBuilder.Input.Spacing.small,
+            value: 'value',
+            id: 'selectDropDown'
+        })
+    ]
+
+    return TeamsViewBuilder.Cards.adaptiveCard({
+        body
     })
 }
 ```
