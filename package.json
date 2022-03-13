@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/SpringRole/teams-view-builder#readme",
   "dependencies": {
-    "botbuilder": "~4.11.1",
-    "lodash": "~4.17.21",
-    "node-emoji": "~1.11.0"
+    "botbuilder": "^4.11.1",
+    "lodash.isempty": "^4.4.0",
+    "node-emoji": "^1.11.0"
   }
 }
