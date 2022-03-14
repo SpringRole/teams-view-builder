@@ -236,4 +236,4 @@ renderSelectDropDown() {
 
 ### License
 
-@springrole/teams-view-builder is licensed under the [MIT License](https://github.com/SpringRole/teams-view-builder/blob/HEAD/LICENSE).
+@springrole/teams-view-builder is licensed under the [MIT License](https://github.com/SpringRole/teams-view-builder/blob/main/LICENSE.md).
