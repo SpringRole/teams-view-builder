@@ -1,3 +1,10 @@
+## [0.0.3](https://github.com/SpringRole/teams-view-builder/compare/v0.0.2...v0.0.3) (2022-04-27)
+
+
+### Bug Fixes
+
+* fixing issues with invoking class constructor without new ([#7](https://github.com/SpringRole/teams-view-builder/issues/7)) ([1b26cc8](https://github.com/SpringRole/teams-view-builder/commit/1b26cc8b90980aa27b0bc6a71800bac6c2c8f83a))
+
 ## [0.0.2](https://github.com/SpringRole/teams-view-builder/compare/v0.0.1...v0.0.2) (2022-04-26)
 
 
