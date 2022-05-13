@@ -1,3 +1,10 @@
+## [0.0.4](https://github.com/SpringRole/teams-view-builder/compare/v0.0.3...v0.0.4) (2022-05-13)
+
+
+### Bug Fixes
+
+* fixing entities import ([b949211](https://github.com/SpringRole/teams-view-builder/commit/b9492110404d8fc056ca213c03b51d1aa77b527a))
+
 ## [0.0.3](https://github.com/SpringRole/teams-view-builder/compare/v0.0.2...v0.0.3) (2022-04-27)
 
 
