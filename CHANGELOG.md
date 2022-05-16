@@ -1,3 +1,10 @@
+## [0.0.5](https://github.com/SpringRole/teams-view-builder/compare/v0.0.4...v0.0.5) (2022-05-16)
+
+
+### Bug Fixes
+
+* adding allow zoom option in image element ([6bf0836](https://github.com/SpringRole/teams-view-builder/commit/6bf08361d596da79e8f5dad9e6ce0ca91f763569))
+
 ## [0.0.4](https://github.com/SpringRole/teams-view-builder/compare/v0.0.3...v0.0.4) (2022-05-13)
 
 
