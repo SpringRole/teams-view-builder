@@ -20,8 +20,10 @@
   "dependencies": {
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
-    "botbuilder": "^4.11.1",
+    "botbuilder": "^4.16.0",
     "lodash.isempty": "^4.4.0",
+    "lodash.isequal": "^4.5.0",
+    "lodash.uniqwith": "^4.5.0",
     "node-emoji": "^1.11.0"
   },
   "devDependencies": {
