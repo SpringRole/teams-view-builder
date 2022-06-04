@@ -1,3 +1,10 @@
+## [0.0.6](https://github.com/SpringRole/teams-view-builder/compare/v0.0.5...v0.0.6) (2022-06-04)
+
+
+### Bug Fixes
+
+* adding logic to choose only unique entities ([00871dd](https://github.com/SpringRole/teams-view-builder/commit/00871dd5ebc48bdf74f9b5b8eb2d586ed9f73bfd))
+
 ## [0.0.5](https://github.com/SpringRole/teams-view-builder/compare/v0.0.4...v0.0.5) (2022-05-16)
 
 
